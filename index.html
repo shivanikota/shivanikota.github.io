@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trust in TraSSt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+.jumbotron {
+  background-image: url('traffic.jpg');
+    background-repeat: no-repeat;
+      background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  padding: 150px 25px;
+}
+     #map {
+        height: 100%;
+      }
+</style>
+<body>
+
+ <div class="jumbotron text-center">
+  <h1>TraSSt</h1>
+  <p>We track your vehicle, secure your vehicle</p>
+  <form id="frm1" class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Enter TraSSt ID" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger" onclick="myFunction()" value="Submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div>
+<h2 id= "h2">Login to see the details</h2>
+<h3 id="vtype"></h3>
+<table id="table" class="table">
+  <tr>
+    <th>Location</th>
+    <th>Speed</th>
+  <tr>
+  </table>
+</div> 
+<script src="script.js"></script>
+</body>
+</html> 
