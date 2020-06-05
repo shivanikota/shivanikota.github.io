@@ -1,15 +1,22 @@
-<!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="styles.css">'
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Trust in Trasst</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="geo.js"></script>
-<script src="script.js"></script>
-<script async defer
+  <script src="script.js"></script>
+   <script src="script1.js"></script>
+   <script src="geo.js"></script>
+   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWwocbzhUJN0R6gNbXXgizGf6sR2U9lhY&callback=initMap">&callback=initMap">
 </script>
+
+</head>
 <style>
 .jumbotron {
   background-image: url('traffic.jpg');
@@ -19,33 +26,10 @@
   color: #ffffff;
   padding: 150px 25px;
 }
-.navbar {
-  margin-bottom: 0;
-  background-color: #f4511e;
-  z-index: 9999;
-  border: 0;
-  font-size: 12px !important;
-  line-height: 1.42857143 !important;
-  letter-spacing: 4px;
-  border-radius: 0;
-}
-
-.navbar li a, .navbar .navbar-brand {
-  color: #fff !important;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #f4511e !important;
-  background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
-}
+     #map {
+        height: 100%;
+      }
 </style>
-<title>Restaurant Finder</title>
-
 <header>
     <nav>
        <ul>
@@ -56,8 +40,6 @@
     </nav>
 </header>
 <main>
-
-
 <center>
  <div class="jumbotron text-center">
   <h1>TraSSt</h1>
@@ -66,13 +48,12 @@
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Enter TraSSt ID" required>
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger" onclick="myFunction()" value="Submit">Submit</button>
+        <button type="button" class="btn btn-danger" onclick="initMap()" value="Submit">Submit</button>
       </div>
     </div>
   </form>
 </div>
 <div>
-
 <h2 id= "h2">Login to see the details</h2>
 <h3 id="vtype"></h3>
 <table id="table" class="table">
@@ -82,7 +63,6 @@
   <tr>
   </table>
 </div> 
-
     <section id="mapContainer" class="hidden">
         <h2>Map</h2>
         <div id="map"></div>
@@ -93,9 +73,5 @@
         <ul>
         </ul>
     </section>
-
 </main>
-
-<footer>
-    
-</footer>
+</html> 
